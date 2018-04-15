@@ -1,0 +1,58 @@
+<html>
+<head>
+<h2 style="text-align: center;text-decoration-style: bold">PRACTICA JAVASCRIPT2</h2>
+<title>CALCULADORA</title>
+<link rel="stylesheet" href="calculadoracss.css"/>
+<script>
+
+function suma(){
+<!-- Suma -->
+n1 = parseInt(operacions.txt_num.value);
+n2 = parseInt(operacions.txt_num2.value);
+operacions.txt_resultado.value=n1+n2;
+}
+function resta(){
+<!-- Resta -->
+n1 = parseInt(operacions.txt_num.value);
+n2 = parseInt(operacions.txt_num2.value);
+operacions.txt_resultado.value=n1-n2;
+}
+function multiplicacio(){
+<!-- Multiplicacion -->
+n1 = parseInt(operacions.txt_num.value);
+n2 = parseInt(operacions.txt_num2.value);
+operacions.txt_resultado.value=n1*n2;
+}
+function divisio(){
+<!-- Division -->
+n1 = parseInt(operacions.txt_num.value);
+n2 = parseInt(operacions.txt_num2.value);
+operacions.txt_resultado.value=n1/n2;
+}
+</script>
+</head>
+
+<body>
+<div  class="calculadora">
+<form name="operacions">
+<center>
+<h1>Calculadora</h1>
+<p>
+<align="center">Numero 1</align>
+<input type="text" name="txt_num" size="20">
+<p>
+<align="center">Numero 2</align>
+<input type="text" name="txt_num2" size="20">
+<p>
+<align="center">Resultado</align>
+<input type="text" name="txt_resultado" size="20">
+ <br /><br />
+    <input type="button" value="+" onclick="suma()">
+    <input type="button" value="-" onclick="resta()">
+    <input type="button" value="*" onclick="multiplicacio()">
+    <input type="button" value="/" onclick="divisio()">
+</form>
+</div>
+</body>
+<footer>Practica e109 - Aitor_Gallardo_Mu&ntilde;oz</footer>
+</html>
